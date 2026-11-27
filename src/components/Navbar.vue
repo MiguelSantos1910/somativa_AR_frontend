@@ -5,7 +5,7 @@
         Guia AR
       </router-link>
 
-      <ul class="flex items-center gap-2 sm:gap-4">
+      <ul class="flex items-center gap-4 sm:gap-4">
         <li>
           <router-link
             to="/"
