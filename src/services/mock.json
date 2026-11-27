@@ -1,0 +1,52 @@
+{
+    "componentes": [
+        {
+            "id":"1",
+            "titulo":"Resistor",
+            "descricao": "Um resistor é um componente eletrônico passivo que limita ou regula a passagem da corrente elétrica em um circuito.",
+            "imagem":"/imagens/resistor.jpg",
+            "modelo":""
+        },
+        {
+            "id":"2",
+            "titulo":"Diodo",
+            "descricao":"Um diodo é um componente eletrônico semicondutor que funciona como uma válvula de sentido único, permitindo que a corrente elétrica passe apenas em uma direção.",
+            "imagem":"/imagens/diodo.jpg",
+            "modelo":""
+        },
+        {
+            "id":"3",
+            "titulo":"Regulador de Tensão",
+            "descricao": "Um regulador de tensão é um componente eletrônico ou dispositivo elétrico projetado para manter a tensão (voltagem) de saída em um nível constante e seguro, independentemente das variações na rede elétrica de entrada ou na demanda de energia do aparelho conectado.",
+            "imagem":"/imagens/regulador.jpg",
+            "modelo":""
+        },
+        {
+            "id":"4",
+            "titulo":"Led",
+            "descricao":"O LED (Light Emitting Diode ou Diodo Emissor de Luz) é um componente eletrônico semicondutor que converte energia elétrica diretamente em luz quando percorrido por uma corrente elétrica no sentido correto",
+            "imagem":"/imagens/led.jpg",
+            "modelo":""
+        }
+    ],
+    "circuitos": [
+        {
+            "id":"1",
+            "titulo":"Ponte Retificadora",
+            "descricao":"A ponte retificadora é um circuito eletrônico composto por quatro diodos conectados estrategicamente para converter corrente alternada (CA) em corrente contínua (CC)",
+            "modelo":""
+        },
+        {
+            "id":"2",
+            "titulo":"Placa-Mãe",
+            "descricao":"A placa-mãe (ou motherboard) é a placa de circuito impresso principal que conecta e permite a comunicação entre todos os componentes do computador, como processador (CPU), memória RAM, armazenamento, placa de vídeo e periféricos. Ela também distribui energia elétrica e gerencia a inicialização do sistema por meio do BIOS/UEFI e do chipset.",
+            "modelo":""
+        },
+        {
+            "id":"2",
+            "titulo":"Placa Ilhada",
+            "descricao":"Uma placa ilhada (ou placa perfurada universal) é uma base de prototipagem eletrônica com furos espaçados (geralmente em grade de 2,54 mm) e ilhas de cobre independentes, onde os componentes são fixados e interligados por solda ou fios.",
+            "modelo":""
+        }
+    ]
+}
