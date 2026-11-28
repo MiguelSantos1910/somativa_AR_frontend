@@ -2,7 +2,6 @@ import { createRouter, createWebHistory } from "vue-router"
 
 import Home from "../views/Home.vue";
 import Circuitos from "../views/Circuitos.vue";
-import Componentes from "../views/Componentes.vue";
 
 const routes = [
     {
@@ -16,10 +15,11 @@ const routes = [
         component: Circuitos
     },
     {
-        path: '/componentes',
-        name: 'componentes',
-        component: Componentes,
-    }
+        path: '/ar',
+        name: 'ar',
+        // Carrega o MindAR/Three.js só ao abrir a página do AR
+        component: () => import("../views/AR.vue"),
+    },
 ]
 const router = createRouter({
     history: createWebHistory(),
