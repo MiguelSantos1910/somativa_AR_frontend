@@ -15,6 +15,7 @@
           {{ descricao }}
         </p>
       </section>
+      <slot />
     </div>
   </div>
 </template>

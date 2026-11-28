@@ -1,52 +1,113 @@
 {
-    "componentes": [
-        {
-            "id":"1",
-            "titulo":"Resistor",
-            "descricao": "Um resistor é um componente eletrônico passivo que limita ou regula a passagem da corrente elétrica em um circuito.",
-            "imagem":"/imagens/resistor.jpg",
-            "modelo":""
-        },
-        {
-            "id":"2",
-            "titulo":"Diodo",
-            "descricao":"Um diodo é um componente eletrônico semicondutor que funciona como uma válvula de sentido único, permitindo que a corrente elétrica passe apenas em uma direção.",
-            "imagem":"/imagens/diodo.jpg",
-            "modelo":""
-        },
-        {
-            "id":"3",
-            "titulo":"Regulador de Tensão",
-            "descricao": "Um regulador de tensão é um componente eletrônico ou dispositivo elétrico projetado para manter a tensão (voltagem) de saída em um nível constante e seguro, independentemente das variações na rede elétrica de entrada ou na demanda de energia do aparelho conectado.",
-            "imagem":"/imagens/regulador.jpg",
-            "modelo":""
-        },
-        {
-            "id":"4",
-            "titulo":"Led",
-            "descricao":"O LED (Light Emitting Diode ou Diodo Emissor de Luz) é um componente eletrônico semicondutor que converte energia elétrica diretamente em luz quando percorrido por uma corrente elétrica no sentido correto",
-            "imagem":"/imagens/led.jpg",
-            "modelo":""
-        }
-    ],
     "circuitos": [
         {
-            "id":"1",
-            "titulo":"Ponte Retificadora",
-            "descricao":"A ponte retificadora é um circuito eletrônico composto por quatro diodos conectados estrategicamente para converter corrente alternada (CA) em corrente contínua (CC)",
-            "modelo":""
+            "id": "1",
+            "titulo": "Ponte Retificadora",
+            "descricao": "A ponte retificadora é um circuito eletrônico composto por quatro diodos conectados estrategicamente para converter corrente alternada (CA) em corrente contínua (CC)",
+            "imagem": "/imagens/ponte-retificadora.jpg",
+            "modelo": "/modelos/ponte.glb",
+            "target": "/imagens/ponte-retificadora.jpg",
+            "alertas": [
+                {
+                    "tipo": "perigo",
+                    "texto": "⚡ Alta tensão na entrada CA"
+                },
+                {
+                    "tipo": "atencao",
+                    "texto": "Respeite a polaridade da saída (+ / −)"
+                }
+            ],
+            "setas": [
+                {
+                    "rotulo": "Entrada CA",
+                    "cor": "#f59e0b",
+                    "x": -0.3,
+                    "y": 0,
+                    "z": 0.1
+                },
+                {
+                    "rotulo": "Saída CC",
+                    "cor": "#22c55e",
+                    "x": 0.3,
+                    "y": 0,
+                    "z": 0.1
+                }
+            ]
         },
         {
-            "id":"2",
-            "titulo":"Placa-Mãe",
-            "descricao":"A placa-mãe (ou motherboard) é a placa de circuito impresso principal que conecta e permite a comunicação entre todos os componentes do computador, como processador (CPU), memória RAM, armazenamento, placa de vídeo e periféricos. Ela também distribui energia elétrica e gerencia a inicialização do sistema por meio do BIOS/UEFI e do chipset.",
-            "modelo":""
+            "id": "2",
+            "titulo": "Placa-Mãe",
+            "descricao": "A placa-mãe (ou motherboard) é a placa de circuito impresso principal que conecta e permite a comunicação entre todos os componentes do computador, como processador (CPU), memória RAM, armazenamento, placa de vídeo e periféricos. Ela também distribui energia elétrica e gerencia a inicialização do sistema por meio do BIOS/UEFI e do chipset.",
+            "imagem": "/imagens/placa-mae.jpg",
+            "modelo": "/modelos/motherboard.glb",
+            "target": "/imagens/placa-mae.jpg",
+            "alertas": [
+                {
+                    "tipo": "perigo",
+                    "texto": "⚡ Descarregue a estática antes de tocar"
+                },
+                {
+                    "tipo": "atencao",
+                    "texto": "Desligue a fonte da tomada"
+                }
+            ],
+            "setas": [
+                {
+                    "rotulo": "Soquete da CPU",
+                    "cor": "#0ea5e9",
+                    "x": 0,
+                    "y": 0.1,
+                    "z": 0.05
+                },
+                {
+                    "rotulo": "Slots de RAM",
+                    "cor": "#a855f7",
+                    "x": 0.3,
+                    "y": 0.1,
+                    "z": 0.05
+                }
+            ]
         },
         {
-            "id":"3",
-            "titulo":"Placa Ilhada",
-            "descricao":"Uma placa ilhada (ou placa perfurada universal) é uma base de prototipagem eletrônica com furos espaçados (geralmente em grade de 2,54 mm) e ilhas de cobre independentes, onde os componentes são fixados e interligados por solda ou fios.",
-            "modelo":""
+            "id": "3",
+            "titulo": "Regulador de Tensão 7805",
+            "descricao": "O regulador de tensão com o CI 7805 é um circuito que converte uma tensão de entrada maior (como 9 V ou 12 V) em uma saída fixa e estável de 5 V. Ele utiliza o regulador linear 7805 junto com capacitores na entrada e na saída para filtrar ruídos, sendo muito usado para alimentar microcontroladores e outros circuitos digitais.",
+            "imagem": "/imagens/regulador-7805.jpg",
+            "modelo": "/modelos/lm.glb",
+            "target": "/imagens/regulador-7805.jpg",
+            "alertas": [
+                {
+                    "tipo": "perigo",
+                    "texto": "🔥 Superfície quente: use dissipador"
+                },
+                {
+                    "tipo": "atencao",
+                    "texto": "Tensão de entrada mínima: 7 V"
+                }
+            ],
+            "setas": [
+                {
+                    "rotulo": "Entrada",
+                    "cor": "#f59e0b",
+                    "x": -0.2,
+                    "y": -0.3,
+                    "z": 0.05
+                },
+                {
+                    "rotulo": "GND",
+                    "cor": "#64748b",
+                    "x": 0,
+                    "y": -0.3,
+                    "z": 0.05
+                },
+                {
+                    "rotulo": "Saída 5 V",
+                    "cor": "#22c55e",
+                    "x": 0.2,
+                    "y": -0.3,
+                    "z": 0.05
+                }
+            ]
         }
     ]
 }
